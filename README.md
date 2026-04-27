@@ -6,6 +6,18 @@
 
 ![Pipeline](assets/pipeline.svg)
 
+## Performance Highlights
+
+| Task | Best Model | Key Metric | Result |
+| --- | --- | --- | ---: |
+| Revolving Eligibility Classification | Soft Voting Ensemble | Accuracy | 0.9540 |
+| Revolving Eligibility Classification | Soft Voting Ensemble | Macro F1 | 0.9161 |
+| CA Limit Regression | XGBoost Regressor | R2 | 0.9735 ± 0.0002 |
+| CA Limit Regression | XGBoost Regressor | MAE | 175,238.63 |
+| CA Limit Regression | XGBoost Regressor | RMSE | 237,785.60 |
+
+분류 모델은 클래스 불균형을 고려해 Macro F1을 핵심 지표로 확인했고, 회귀 모델은 5-Fold 교차검증 기준으로 XGBoost가 가장 안정적인 설명력을 보였습니다.
+
 ## 프로젝트 개요
 
 | 구분 | 내용 |
